@@ -1,6 +1,8 @@
 
 ## Flex布局
 
+[阮一峰 Flex 布局教程-语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+
 ### 背景
 
 - 传统布局基于盒状模型 依赖 `display` | `position` | `float` 垂直居中不易实现
@@ -20,7 +22,6 @@
      .box{
        display: flex;
      }
-      
       
      // 行内 
      .box{
@@ -92,5 +93,23 @@ flex-direction属性决定主轴的方向（即项目的排列方向）
 <div align=center>
     <img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071009.jpg">
  </div> 
+ 
+#### 3、flex-flow 
     
+flex-direction 属性和 flex-wrap 的简写，默认 row nowrap
+
+    .box {
+      flex-flow: <flex-direction> || <flex-wrap>;
+    }
     
+#### 4、justify-content     
+
+定义了项目在主轴上的对齐方式
+
+    .box {
+      justify-content: flex-start | flex-end | center | space-between | space-around;
+    }
+
+<div align=center>
+    <img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071010.png">
+</div>     
