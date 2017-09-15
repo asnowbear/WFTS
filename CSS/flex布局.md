@@ -113,3 +113,105 @@ flex-direction 属性和 flex-wrap 的简写，默认 row nowrap
 <div align=center>
     <img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071010.png">
 </div>     
+
+#### 5、align-items属性
+
+项目在交叉轴上如何对齐
+
+    .box {
+      align-items: flex-start | flex-end | center | baseline | stretch;
+    }
+    
+<div align=center>
+    <img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071011.png">
+</div>      
+
+#### 6、align-content属性
+
+定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用
+
+    .box {
+      align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+    }
+    
+<div align=center>
+    <img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071012.png">
+</div>     
+
+### 项目属性
+
+一共6个
+
+- order
+
+- flex-grow
+
+- flex-shrink
+
+- flex-basis
+
+- flex
+
+- align-self
+
+#### 1、order属性
+
+项目的排列顺序。数值越小，排列越靠前，默认为0
+
+    .item {
+      order: <integer>;
+    }
+    
+<div align=center>
+    <img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071013.png">
+</div>     
+ 
+#### 2、flex-grow属性
+
+定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大
+
+<div align=center>
+    <img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071014.png">
+</div> 
+
+#### 3、flex-shrink属性
+
+定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小
+
+<div align=center>
+    <img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071015.jpg">
+</div> 
+
+#### 4、flex-basis属性
+
+定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。
+它的默认值为auto，即项目的本来大小
+
+    .item {
+      flex-basis: <length> | auto; /* default auto */
+    }
+
+#### 5、flex属性
+
+flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选
+
+    .item {
+      flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+    }
+    
+该属性有两个快捷值：auto (1 1 auto) 和 none (0 0 auto)。
+建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值
+
+#### 6、align-self属性
+    
+align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，
+表示继承父元素的align-items属性，如果没有父元素，则等同于stretch    
+
+    .item {
+      align-self: auto | flex-start | flex-end | center | baseline | stretch;
+    }
+    
+<div align=center>
+    <img src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071016.png">
+</div>    
+    
