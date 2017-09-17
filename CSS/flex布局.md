@@ -96,7 +96,7 @@ flex-direction属性决定主轴的方向（即项目的排列方向）
  
 #### 3、flex-flow 
     
-flex-direction 属性和 flex-wrap 的简写，默认 row nowrap
+flex-direction(1) 属性和 flex-wrap(2) 的简写，默认 row nowrap
 
     .box {
       flex-flow: <flex-direction> || <flex-wrap>;
