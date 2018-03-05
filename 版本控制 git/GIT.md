@@ -16,4 +16,9 @@
  `git checkout` 版本号 ： 用来在本地切换对应的版本
  
  例如 `git checkout online`
+ 
+## git放弃本地修改 强制更新
+
+      git fetch --all
+      git reset --hard 最新版本
 
