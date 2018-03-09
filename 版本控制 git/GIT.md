@@ -21,4 +21,12 @@
 
       git fetch --all
       git reset --hard 最新版本
+      
+## git 查看远程仓库地址
+      
+      git remote -v
+    
+## git 提交版本分支
+    
+      git push --set-upstream origin 版本号
 
