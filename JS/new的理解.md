@@ -8,5 +8,7 @@
 其实干了三件事情
         
     var obj = {}
+    
     obj._proto_ = Base.prototype
+    
     Base.call(obj)
