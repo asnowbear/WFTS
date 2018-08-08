@@ -13,9 +13,9 @@
 
 ## 使用 git checkout命令
 
- `git checkout` 版本号 ： 用来在本地切换对应的版本
- 
- 例如 `git checkout online`
+     `git checkout` 版本号 ： 用来在本地切换对应的版本
+     
+     例如 `git checkout online`
  
 ## git放弃本地修改 强制更新
 
@@ -29,4 +29,24 @@
 ## git 提交版本分支
     
       git push --set-upstream origin 版本号
+
+## 查看本地分支
+
+     git branch -l 
+
+## 查看远程分支
+
+     git branch -r 
+
+## 查看全部分支（远程的和本地的）
+
+     git branch -a 
+
+## 创建并切换到分支feature-branch  
+
+    $  git checkout -b feature-branch    
+
+##  推送本地的feature-branch(冒号前面的)分支到远程origin的feature-branch(冒号后面的)分支(没有会自动创建)
+    $  git push origin feature-branch:feature-branch    
+
 
