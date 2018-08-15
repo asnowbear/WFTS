@@ -68,3 +68,21 @@
 ## git环境退出vim提示
 
     esc + Z * 2
+
+ ## git 切换远程仓库地址
+
+ ### 1、直接修改
+
+     git remote set-url origin URL
+
+### 2、先删除，再添加
+
+     git remote  rm origin
+
+     git remote add origin url 
+
+### 查看仓库地址
+
+     git remote -v
+
+
