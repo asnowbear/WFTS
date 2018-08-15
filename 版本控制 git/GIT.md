@@ -56,3 +56,15 @@
     $ git config –global user.email “github@xx.com”
 
     $ git config –list
+
+## git查看提交更改记录
+
+    git log -p -2
+
+## git 查看冲突文件
+
+    git diff + <文件名>    
+
+## git环境退出vim提示
+
+    esc + Z * 2
