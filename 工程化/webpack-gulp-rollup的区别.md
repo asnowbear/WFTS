@@ -30,3 +30,5 @@ Webpack 的定位是模块打包器，而 Gulp/Grunt 属于构建工具。Webpac
   - Rollup 与 Webpack 有这不同的用途，因此会共同存在，并相互支持
 
   - React、Vue 已经将构建工具从 Webpack 换成了 Rollup
+
+### 应用使用 webpack，类库使用 rollup
