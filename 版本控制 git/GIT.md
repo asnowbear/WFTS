@@ -85,4 +85,12 @@
 
      git remote -v
 
+### 已存在的文件夹或 Git 仓库
+
+    cd existing_folder
+    git init
+    git remote add origin http://ip/namespace/your-project.git
+    git add .
+    git commit
+    git push -u origin master
 
