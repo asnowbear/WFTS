@@ -94,3 +94,12 @@
     git commit
     git push -u origin master
 
+### 创建分支并提交至远程
+
+    1. git checkout -b dev
+
+    2. git push origin dev:dev
+
+### 删除远程分支
+
+    1. git push origin --delete dev
